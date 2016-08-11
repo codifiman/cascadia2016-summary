@@ -1,4 +1,4 @@
-polygon.octagon {
+polygon.hexagon {
   animation: color-rotate 20s;
   -webkit-animation: color-rotate 20s;
   animation-iteration-count: infinite;
