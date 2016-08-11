@@ -191,15 +191,15 @@
               <p>Child and Type Selectors</p>
               <pre><code>
 :first-child {                  <div>
-  background-color: red;          <div>
+  background-color: yellow;       <div>
 }                                   <div>I'm an only child!</div>
                                   <div>
 :last-child {                     <div>
-  background-color: orange;         <i></i>
+  background-color: red;            <i></i>
 }                                   <p>First of type!</p>
                                     <p>Last of child/type (⌐■_■)</p>
 :only-child {                     </div>
-  background-color: grey;       <div>I'm the last child.</div>
+  background-color: white;      <div>I'm the last child.</div>
 }                             </div>
 
               </pre></code>
@@ -445,7 +445,7 @@ self.addEventListener('fetch',
 </template>
 <script>
 
-  class HexgonSVG extends HTMLElement {
+  class HexagonSVG extends HTMLElement {
     createdCallback() {
       const parentDoc = document._currentScript.ownerDocument;
       const thisDoc = parentDoc.querySelector('link[rel="import"]');
@@ -453,7 +453,7 @@ self.addEventListener('fetch',
       const template = thisDoc.querySelector('#hexagon-svg-template');
 
       let shadowRoot = this.createShadowRoot();
-      const instance = documnent.importNode(template.content, true);
+      const instance = document.importNode(template.content, true);
       shadowRoot.appendChild(instance);
     }
   }
