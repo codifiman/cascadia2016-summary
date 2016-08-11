@@ -1,0 +1,44 @@
+<template id="octagon-svg-template">
+  <!-- Keeping our CSS as an import allows us to use LESS/PostCSS -->
+  <style>
+    @import url(octagon-svg/octagon-svg.css);
+  </style>
+  <svg id="orb" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="XMinYMin meet">
+    <polygon class="octagon" points="0,25 50,0 100,25 100,75 50,100 0,75"></polygon>
+    <polygon class="super-shiny" points="50,0 100,25 84,28"></polygon>
+    <polygon class="shiny" points="84,28 100,25 100,75 84,79"></polygon>
+    <polygon class="dark" points="100,75 50,100 0,75 15.5,79 50 85 84.5,79"></polygon>
+    <polyline class="edge" points="50,0 84,28 84,79"></polyline>
+    <polyline class="edge" points="50,0 50,85"></polyline>
+    <polyline class="edge" points="0,25 15.5,28 50,32 84,28 100,25"></polyline>
+    <polyline class="edge" points="50,0 15.5,28 15.5,79"></polyline>
+  </svg>
+</template>
+
+<script>
+  'use strict';
+
+  class OctagonSVG extends HTMLElement {
+
+    createdCallback() {
+      /* Define our parent doc: This is the caller script, not necessarily the
+       * base document object.
+       */
+      const parentDoc  = document._currentScript.ownerDocument;
+
+      /* Define the import's doc, so we can grab our template and add it to
+       * our tag's DOM.
+       */
+      const thisDoc = parentDoc.querySelector('link[rel="import"]').import;
+      const template = thisDoc.querySelector('#octagon-svg-template');
+
+      /* Throw some shade. Create a shadow root and add our template to it. */
+      let shadowRoot = this.createShadowRoot();
+      const instance = document.importNode(template.content, true);
+      shadowRoot.appendChild(instance);
+    }
+  }
+
+  document.registerElement('octagon-svg', OctagonSVG);
+
+</script>

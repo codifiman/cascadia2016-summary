@@ -1,0 +1,554 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>reveal.js</title>
+
+  <!-- Components -->
+  <script src="/js/webcomponents.js"></script>
+  <link rel="import" href="octagon-svg/octagon-svg.html">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css">
+  <link rel="stylesheet" href="css/cascadia2016.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-background-iframe="https://www.youtube.com/embed/NDH-U7t7tnQ?autoplay=1&modestbranding=1&rel=0">
+        <h1>Cascadiafest 2016</h1>
+      </section>
+      <section class="stack" data-background-color="hsl(280,30%,15%)">
+        <section>
+          <h1>CSS Day</h1>
+          <p>Practical CSS makes everything better</p>
+        </section>
+        <section>
+          <h3>Practical Color Theory</h3>
+          <p>Color wheels: HSL</p>
+          <svg class="wheel" viewBox="0 0 50 50">
+            <polygon class="red"     points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="orange"  points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="yellow"  points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="green"   points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="seafoam" points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="teal"    points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="blue"    points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="indigo"  points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="violet"  points="25,0 30,6 25,20 20,6"></polygon>
+          </svg>
+          <div class="grid hsl-bar">
+            <div class="column hsl-red">0</div>
+            <div class="column hsl-orange">40</div>
+            <div class="column hsl-yellow">80</div>
+            <div class="column hsl-green">120</div>
+            <div class="column hsl-seafoam">160</div>
+            <div class="column hsl-teal">200</div>
+            <div class="column hsl-blue">240</div>
+            <div class="column hsl-indigo">280</div>
+            <div class="column hsl-violet">320</div>
+          </div>
+        </section>
+        <section>
+          <p>Complementary colors stimulate eyes</p>
+          <a href="http://tallys.github.io/color-theory/">Natalya's Complementary Color Scheme Builder</a>
+        </section>
+        <section>
+          <p>Design for accessibility and audience</p>
+           <svg class="wheel normal" viewBox="0 0 50 50">
+            <polygon class="red"     points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="orange"  points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="yellow"  points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="green"   points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="seafoam" points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="teal"    points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="blue"    points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="indigo"  points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="violet"  points="25,0 30,6 25,20 20,6"></polygon>
+          </svg>
+          <svg class="wheel red-green" viewBox="0 0 50 50">
+            <polygon class="red"     points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="orange"  points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="yellow"  points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="green"   points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="seafoam" points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="teal"    points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="blue"    points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="indigo"  points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="violet"  points="25,0 30,6 25,20 20,6"></polygon>
+          </svg>
+          <svg class="wheel blue-yellow" viewBox="0 0 50 50">
+            <polygon class="red"     points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="orange"  points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="yellow"  points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="green"   points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="seafoam" points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="teal"    points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="blue"    points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="indigo"  points="25,0 30,6 25,20 20,6"></polygon>
+            <polygon class="violet"  points="25,0 30,6 25,20 20,6"></polygon>
+          </svg>
+        </section>
+        <section>
+          <h3>Fancy Pseudo-Selectors</h3>
+          <div class="grid code-example container">
+            <div class="column" style="max-width: 50%">
+              <p>:lang(language)</p>
+              <pre><code data-trim>
+<div lang="en">
+  Hello. My name is Codi.
+</div>
+<div lang="jp">
+  こんにちは。わたしわ こーでいー。
+</div>
+
+:lang(jp) {
+  font-family: serif;
+  writing-mode: vertical-rl
+}
+
+              </pre></code>
+              <div class="grid example-content example-lang">
+                <div class="column" style="padding: 1em;" lang="en">Hello! My name is Codi.</div>
+                <div class="column" lang="jp">こんにちは。わたしわ こーでいー。</div>
+              </div>
+            </div>
+            <div class="column">
+              <p>::after and ::before</p>
+              <pre><code data-trim>
+<div data-content="hello!">
+  my name is codi.
+</div>
+<div data-content="こんにちは。">
+  わたしわ こーでいー。
+</div>
+
+::before {
+  content: attr(data-content);
+  color: yellow;
+}
+
+              </code></pre>
+              <div class="example-content">
+                <div class="example-before" data-content="hello!"> my name is codi.</div>
+                <div class="example-before" data-content="こんにちは。">わたしわ こーでいー。</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="grid code-example container">
+            <div class="column">
+              <p>::first-letter</p>
+              <pre><code data-trim>
+<div>
+  Cupcake ipsum dolor. Sit amet candy
+  canes bear claw. Sweet roll tiramisu
+  cheesecake cake tart cake brownie.
+  Marshmallow drops wafer cookie gummies.
+</div>
+
+::first-letter { font-size: 2m; }
+              </pre></code>
+              <p class="example-content example-first-letter">
+                Cupcake ipsum dolor. Sit amet candy canes bear claw. Sweet roll tiramisu cheesecake cake tart cake brownie. Marshmallow lemon drops wafer cookie gummies.
+              </p>
+            </div>
+            <div class="column">
+              <p>::first-line</p>
+              <pre><code data-trim>
+<div>
+  Cupcake ipsum dolor. Sit amet candy
+  canes bear claw. Sweet roll tiramisu
+  cheesecake cake tart cake brownie.
+  Marshmallow drops wafer cookie gummies.
+</div>
+
+::first-line { font-variant: small-caps; }
+              </pre></code>
+              <p class="example-content example-first-line">
+                Cupcake ipsum dolor. Sit amet candy canes bear claw. Sweet roll tiramisu cheesecake cake tart cake brownie. Marshmallow lemon drops wafer cookie gummies.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="grid">
+            <div class="column">
+              <p>Child and Type Selectors</p>
+              <pre><code>
+:first-child {                  <div>
+  background-color: red;          <div>
+}                                   <div>I'm an only child!</div>
+                                  <div>
+:last-child {                     <div>
+  background-color: orange;         <i></i>
+}                                   <p>First of type!</p>
+                                    <p>Last of child/type (⌐■_■)</p>
+:only-child {                     </div>
+  background-color: grey;       <div>I'm the last child.</div>
+}                             </div>
+
+              </pre></code>
+              <div class="grid example-content example-child-selectors">
+                <div class="column"><div>I'm an only child!</div></div>
+                <div class="column">
+                  <span></span>
+                  <p>First of type!</p>
+                  <p>Last (⌐■_■)</p>
+                </div>
+                <div class="column">I'm the last child.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="grid">
+            <div class="column">
+              <p>:not(selector)</p>
+              <pre><code data-trim>
+:not(:empty) {
+  background-color: green;
+}
+
+:not(:first-child):not(:empty) {
+  background-color: yellow;
+}
+              </pre></code>
+              <div class="grid example-content example-not-selectors">
+                <div>1</div> <div>2</div> <div>3</div> <div></div> <div>5</div>
+              </div>
+            </div>
+            <div class="column">
+              <p>:nth-of-type(x), :nth-child(x)</p>
+              <pre><code data-trim>
+:nth-child(even) {
+  background-color: yellow;
+}
+
+:nth-of-type(2n + 1) {
+  background-color: teal;
+}
+              </pre></code>
+              <div class="grid example-content example-nth-selectors">
+                <div>1</div> <div>2</div> <div>3</div> <div>4</div> <div>5</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>Accessible Forms</h3>
+          <p>Communicate clearly</p>
+          <p>Don't Ask for unneccessary or confusing data</p>
+          <p>Be device-friendly</p>
+        </section>
+        <section>
+          <h4>Communicate Clearly: Error Handling</h4>
+          <p class="dont">Don't show validation errors while typing</p>
+          <p class="dont">Don't show validation errors <b>after form submission</b></p>
+          <p class="do">Do show validation errors on blur</p>
+          <p class="do">Be clear with what's required (or what isn't)</p>
+          <p class="do">Be upfront about format requirements</p>
+        </section>
+        <section>
+          <h4>Communicate Clearly: Options</h4>
+          <p class="dont">Don't put a two-option input in a dropdown</p>
+          <p class="do">If there are only a few options, use a radio group</p>
+          <div class="grid">
+            <select class="column"><option>Bacon</option><option>Sausage</option></select>
+            <div class="column .radio-example">
+              <input type="radio" name="breakfast" value="bacon">Bacon</input>
+              <input type="radio" name="breakfast" value="sausage">Sausage</input>
+            </div>
+          </div>
+          <p class="do">Collapse groups of options into option-groups to save label space</p>
+          <select>
+            <optgroup label="Pork">
+              <option>Bacon</option>
+              <option>Sausage</option>
+              <option>Ham</option>
+            </optgroup>
+            <optgroup label="Tofu">
+              <option>Ground</option>
+              <option>Cubed</option>
+              <option>Skins</option>
+            </optgroup>
+          </select>
+        </section>
+        <section>
+          <h4>Communicating Clearly: Labels vs. Placeholders</h4>
+          <p class="dont">Don't use placeholders as labels</p>
+          <p class="do">Use placeholders to show sample input</p>
+          <div class="grid">
+            <div class="example-label column">
+              <i>(required)</i>
+              <label>Name</label>
+              <input type="text" placeholder="Louise Belcher"></input>
+            </div>
+            <div class="example-label column">
+              <i>(optional)</i>
+              <input type="text" placeholder="Age"></input>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h4>Be Device Friendly</h4>
+          <ul>
+            <li>Mobile Friendly</li>
+            <li>Screen-reader Friendly</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Flipping tables</h3>
+          <p>Don't ever, ever, ever, ever use a table for layout.</p>
+        </section>
+        <section>
+          <h3>CSS Pre- + Post-processing</h3>
+          <p>Useful together!</p>
+          <ul>
+            <li>Autoprefixer</li>
+            <li>Cleanup</li>
+            <li>Linting</li>
+            <li>Polyfills</li>
+          </ul>
+        </section>
+        <section>
+          <h3>SVG: So Very Good</h3>
+          <octagon-svg style="width: 5%;"></octagon-svg>
+          <octagon-svg style="width: 15%;"></octagon-svg>
+          <octagon-svg style="width: 25%;100%"></octagon-svg>
+        </section>
+        <section>
+        <h3>Slide decks, etc</h3>
+          <div class="slide-decks">
+            <a href="https://docs.google.com/presentation/d/1ytSMRNpNrD9CWms351X4xelQuJT24tIqKnIzSbe2OQ0/edit#slide=id.g1127eada23_0_1">
+              Natalya Shellburn: Practical color theory for people who code
+            </a>
+            <a href="http://tallys.github.io/color-theory/">Natalya's Complementary Scheme Builder</a>
+            <a href="http://revoltpuppy.com/articles/88/css-vertigo-understanding-perspective-a-little-bit-more">
+              Justin McDowell: Bauhaus in the Browser
+            </a>
+            <a href="https://speakerdeck.com/mkivikoski/css-pseudo">
+              Mike Kivikoski: CSS Pseudo – :hover, ::after and beyond
+            </a>
+            <a href="http://www.slideshare.net/clarissapeterson/creating-beautiful-accessible-and-userfriendly-forms">
+              Clarissa Peterson: Creating Beautiful, Accessible, and User-Friendly Forms
+            </a>
+            <a href="https://jdsteinbach.com/sass-postcss/#/">
+              James Steinbach: Using Sass & PostCSS Together
+            </a>
+            <a href="http://tylersticka.github.io/slides-svg/#/">
+              Tyler Sticka: SVG: So Very Good
+            </a>
+            <a href="https://es.slideshare.net/secret/sM6tGE1TkBSzVo">
+              Lourdes Montano: Learning and feeling overwhelmed: methods to organize your learning process in CSS
+            </a>
+        </div>
+        </section>
+      </section>
+      <section class="stack" data-background-color="hsl(200,30%,15%)">
+        <section>
+          <h1>Browser Day</h1>
+          <p>The web is evolving (slowly)</p>
+        </section>
+        <section>
+          <h3>Web Workers and Service Workers</h3>
+          <div class="grid">
+            <pre class="column"><code data-trim>
+// index.js
+var worker = new Worker('worker.js');
+worker.postMessage('ping');
+worker.onmessage = function(e) {
+  console.log(e.data);   // 'pong'
+};
+            </pre></code>
+            <pre class="column"><code data-trim>
+// worker.js
+self.onmessage = function(e) {
+  console.log(e.data); // 'ping'
+  self.postMessage('pong');
+
+};
+            </pre></code>
+        </div>
+        <div class="grid">
+          <pre class="column"><code data-trim>
+// index.js
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register(
+    '/service-worker.js');
+
+}
+          </pre></code>
+          <pre class="column"><code data-trim>
+// service-worker.js
+self.addEventListener('fetch',
+  function(e) {
+    e.respondWith(fetch(e.request));
+  }
+};
+          </pre></code>
+        </div>
+        </section>
+        <section>
+          <table>
+            <caption>What's the difference?</caption>
+            <thead>
+              <th></th>
+              <th>Web Workers</th>
+              <th>Service Workers</th>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Tab control</th>
+                <td>Many per tab</td><td>One for all tabs</td>
+              </tr>
+              <tr>
+                <th scope="row">Lifespan</th>
+                <td>Same as tab</td><td>Independent</td>
+              </tr>
+              <tr>
+                <th scope="row">Good for</th>
+                <td>Parallelism</td><td>Caching</td>
+              </tr>
+          </table>
+        </section>
+        <section>
+          <h3>Web Components</h3>
+          <octagon-svg style="width: 5em;"></octagon-svg>
+          <aside>hello, again</aside>
+        </section>
+        <section>
+          <pre style="width:120%; margin: 0 -10%;"><code data-trim>
+// hexagon-svg.html
+<template id="hexagon-svg-template">
+  <!-- Keeping our CSS as an import allows us to use LESS/PostCSS -->
+  <style>
+    @import url(hexagon-svg/hexagon-svg.css);
+  </style>
+  <svg id="orb" viewBox="0 0 100 100" xmlns="http://w3.org/2000/svg">
+    ...
+  </svg>
+</template>
+<script>
+
+  class HexgonSVG extends HTMLElement {
+    createdCallback() {
+      const parentDoc = document._currentScript.ownerDocument;
+      const thisDoc = parentDoc.querySelector('link[rel="import"]');
+
+      const template = thisDoc.querySelector('#hexagon-svg-template');
+
+      let shadowRoot = this.createShadowRoot();
+      const instance = documnent.importNode(template.content, true);
+      shadowRoot.appendChild(instance);
+    }
+  }
+
+  document.registerElement('hexagon-svg', HexagonSVG);
+</script>
+          </pre></code>
+        </section>
+        <section>
+          <h3>HTTP/2 Server Push</h3>
+          <a href="https://http2.github.io/faq/">https://http2.github.io/faq/</a>
+        </section>
+        <section>
+          <h3>Accessibility</h3>
+          <ul>
+            <li>Keyboard Support</li>
+            <li>ARIA attributes</li>
+            <li>Color contrast</li>
+          </ul>
+          <p>There are tools to help test accessibility</p>
+        </section>
+        <section>
+          <h3>Slide decks, etc</h3>
+          <div class="slide-decks">
+            <a href="https://speakerdeck.com/rmurphey/cascadiajs-making-it-better-without-making-it-over">
+              Rebecca Murphey: Making it Better Without Making it Over
+            </a>
+            <a href="https://nolanlawson.github.io/cascadia-2016/#/">
+              Nolan Lawson: Demystifying Web Workers and Service Workers
+            </a>
+            <a href="http://sethsamuel.github.io/talks/2016-08-03-cascadiafest/public/">
+              Seth Samuel: Arbitrary Computation on the GPU Using WebGL
+            </a>
+            <a href="https://speakerdeck.com/feministy/in-defense-of-static-sites">
+              Liz Abinante: In Defense of Static Sites
+            </a>
+            <a href="https://thomaswilburn.github.io/slide-dash-show/#0">
+              Thomas Wilburn: Custom Elements in Production
+            </a>
+            <a href="http://marcysutton.github.io/a11y-testing-with-axe/#/4">
+              Marcy Sutton: Where in the Stack is Carmen Sanfrancisco?
+            </a>
+          </div>
+        </section>
+      </section>
+      <section class="stack" data-background-color="hsl(170,20%,20%)">
+        <section>
+          <h1>Node Day</h1>
+          <p>JavaScript is for more than just websites.</p>
+        </section>
+        <section>
+          <h3>Overcoming Latency: Compounding</h3>
+          <ul>
+            <li>Keep everything in slow storage</li>
+            <li>Cache frequently-accessed things in fast storage</li>
+            <li>Cache as much as you can in the browser: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API">IndexedDB</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Dependency Management: Greenkeeper</h3>
+        </section>
+        <section>
+          <h3>Slide decks, etc</h3>
+          <div class="slide-decks">
+            <a href="https://www.youtube.com/watch?v=-6REd8lLsPM">
+              Mariko Kosaka: Making a Robot Eye with JavaScript - or Magic of Computer Vision Unraveled
+            </a>
+            <a href="http://slides.com/captainsafia/memory-in-javascript#/">
+              Safia Abdalla: The Hitchhiker's Guide to All Things Memory in Javascript
+            </a>
+            <a href="https://speakerdeck.com/boennemann/greenkeeper-managing-dependencies-with-confidence-1">
+              Stephan Bönnemann: Greenkeeper – managing dependencies with confidence
+            </a>
+          </div>
+        </section>
+      </section>
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      history: true,
+
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+        { src: 'plugin/markdown/marked.js' },
+        { src: 'plugin/markdown/markdown.js' },
+        { src: 'plugin/notes/notes.js', async: true },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+      ]
+    });
+  </script>
+</body>
+</html>
